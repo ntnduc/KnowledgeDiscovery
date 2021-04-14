@@ -67,7 +67,7 @@ def replaceFile(file_replace_path, file_data_path, new_data_path):
             beautiData.append(dataFrame.Sentence[index].replace(dataReplaceFrame.word[indexReplace], dataReplaceFrame.word_replace[indexReplace]))
         worksheet.write(index+1, 0, index)
         worksheet.write(index+1, 1, tag)    
-        worksheet.write(index+1, 2 , beautiData[len(dataReplaceFrame)-1])
+        worksheet.write(index+1, 2, beautiData[len(dataReplaceFrame)-1])
     workbook.close()
     print("DONE!")
         
